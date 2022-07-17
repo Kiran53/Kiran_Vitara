@@ -9,8 +9,7 @@ const port=process.env.PORT || 4000
 const app=express()
 
 app.use(express.json())
-app.use(cookieParser()
-)
+app.use(cookieParser())
 
 app.use(express.static(path.join(__dirname, '/client/build')))
 app.use('/api',authRoutes)
